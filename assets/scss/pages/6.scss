@@ -1,0 +1,19 @@
+#postSuccessMsg {
+  background-color: transparent !important; /* 移除預設白色背景 */
+  border: none !important; /* 移除預設邊框 */
+  box-shadow: none !important; /* 移除預設陰影 */
+  padding: 0 !important; /* 移除預設內距 */
+}
+.toast-text{
+    width: 343px;
+    bottom: 50%;
+padding-top: 8px;
+padding-bottom: 8px;
+    }
+
+.toast-container {
+  z-index: 1055; /* 確保在最上層 */
+  pointer-events: none; /* 不阻擋其他元素的點擊 */
+  bottom: 102px;
+  left:8px;
+}

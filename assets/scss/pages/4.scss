@@ -1,0 +1,166 @@
+.tab-switch {
+  background-color: $accent-2;
+  border-radius: 50px;
+}
+
+.tab-item {
+  border: none;
+  background-color: transparent;
+  color: $neutral-700;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.tab-item.active {
+  background-color: $accent-1;
+  color: $neutral-50;
+}
+
+.kanbanImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  background-image: url(/assets/images/4/SignTopic-sm-01.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* 讓圖片貼合容器 */
+  background-position: center;
+
+  aspect-ratio: 220.99 / 190;
+  /* 依圖片比例設定 */
+  width: 220.99px;
+  box-sizing: border-box;
+  color: $accent-4;
+  font-size: 22px;
+}
+
+.text-1 {
+  top: 26px;
+  left: 10.78px;
+  width: 29.65px;
+}
+
+.text-2 {
+  top: 26px;
+  right: 10.78px;
+  width: 29.65px;
+}
+
+.text-3 {
+  bottom: 44.47px;
+  left: 10.78px;
+  width: 29.65px;
+}
+
+.text-4 {
+  bottom: 44.47px;
+  right: 10.78px;
+  width: 29.65px;
+}
+
+.circle-icon-green {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px;
+  height: 32px;
+
+  background-color: $secondary-600;
+  color: $accent-5;
+  font-weight: 900;
+  font-size: 20px;
+  border: 1px solid $neutral-950;
+  border-radius: 50%;
+  
+}
+
+.pt-44 {
+  padding-top: 44px;
+}
+
+.circle-icon-pink {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px;
+  height: 32px;
+
+  background-color: $primary-600;
+  color: $accent-5;
+  font-weight: 900;
+  font-size: 20px;
+  border: 1px solid $accent-5;
+  border-radius: 50%;
+  
+}
+
+.circle-icon-brown {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px;
+  height: 32px;
+
+  background-color: $accent-900;
+  color: $accent-300;
+  font-weight: 900;
+  font-size: 20px;
+  border: 1px solid $accent-300;
+  border-radius: 50%;
+  
+}
+
+.circle-icon-yellow {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px;
+  height: 32px;
+
+  background-color: $accent-200;
+  color: $neutral-950;
+  font-weight: 900;
+  font-size: 20px;
+  border: 1px solid $neutral-950;
+  border-radius: 50%;
+  
+}
+
+.circle-icon-white {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px;
+  height: 32px;
+
+  background-color: $accent-5;
+  color: $primary-600;
+  font-weight: 900;
+  font-size: 20px;
+  border: 1px solid $accent-5;
+  border-radius: 50%;
+  
+}
+.kanbanIcon {
+  width: 72px;
+  height: 72px;
+  border-radius: 4px;
+  & p {
+    margin: 0;
+  }
+}
+.mb-56 {
+  margin-bottom: 56px;
+}
+
+.bottom-text-icons {
+  border-top-left-radius: 16px; /* 上左圓角 */
+  border-top-right-radius: 16px; /* 上右圓角 */
+}

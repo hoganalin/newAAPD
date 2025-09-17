@@ -1,0 +1,102 @@
+
+
+.text-absolute {
+  padding: 0px 10px;
+  background-color: #faf5ec;
+  position: absolute;
+  top: -8px;
+  left: 50%; /* 水平中點 */
+  transform: translateX(-50%); /* 修正偏移，使整段置中 */
+  text-align: center; /* 文字置中 */
+  width: 90%; 
+
+}
+
+
+
+.common-area {
+  height: 188px;
+  position: relative;
+  width: 100%;
+}
+
+
+
+.p-span {
+  padding: 1px 12px;
+}
+
+
+.us-absolute {
+  position: absolute;
+  top:  calc(50% - 65.07px);
+  left: calc(50% - 136.5px);
+  
+}
+
+.usa-absolute {
+  position: absolute;
+  top:  calc(50% - 65.34px);
+  left: calc(50% + 57.5px);
+}
+
+.travel-absolute {
+  position: absolute;
+  top:  calc(50% - 25.07px);
+  left: calc(50% - 23.5px);
+}
+
+.coffee-absolute {
+  position: absolute;
+  top:  calc(50% + 6.93px);
+  left: calc(50% - 156.5px);
+}
+
+.london-absolute {
+  position: absolute;
+  top:  calc(50% + 46.93px);
+  left: calc(50% - 23.5px);
+}
+
+.europe-absolute {
+  position: absolute;
+  top:  calc(50% + 14.66px);
+  left: calc(50% + 79.5px);
+}
+
+
+.stage { 
+  --stagger: 0.3s;          /* 每顆間隔時間 */
+}
+
+.p-span.animate__animated {
+  --animate-duration: 0.3s; 
+   animation-delay: calc(var(--i, 0) * var(--stagger));
+  }  
+
+
+
+
+
+
+.bubbo-img {
+  position: absolute;
+  top: 195.07px; /* 向下疊出來一點 */
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 348px; /* 可以調整大小 */
+}
+
+.match-img {
+  max-width: 343px;
+  height: 219.07px;
+  
+
+  
+}
+.match-wrapper {
+  position: relative; /* 讓內部的絕對定位參考這個容器 */
+  display: flex;
+  justify-content: center; /* 水平置中 */
+  margin-bottom: 149px; /* 預留 footer 間距 */
+}

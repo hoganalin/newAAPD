@@ -1,0 +1,109 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF UI Text", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+}
+
+.index-title {
+  font-size: 100px;
+}
+search-span {
+  color: $neutral-700;
+}
+.middleButton {
+  width: 247px;
+  text-align: end;
+  button {
+    width: 49.2%;
+  }
+}
+.topic-cards {
+  max-height: 564px;
+  scrollbar-width: none; /* Firefox 隱藏 */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome / Safari 隱藏 */
+  }
+}
+
+.edit-btn {
+  position: absolute;
+  top: -88px; /* 按鈕浮在 footer 上方 (可自行調整) */
+  right: 0.875rem;
+  z-index: 10;
+
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer {
+  position: relative;
+  &-function {
+    width: 20%;
+  }
+  &-active {
+    // transition: transform 0.1s,transform-origin 0.1s;
+    transform: scale(1.87, 1.87);
+    transform-origin: bottom center;
+  }
+}
+
+.footer {
+  &-functions {
+    align-items: center;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+  }
+  &-function {
+    width: 20%;
+  }
+  &-active {
+    // transition: transform 0.1s,transform-origin 0.1s;
+    transform: scale(1.87, 1.87);
+    transform-origin: bottom center;
+  }
+}
+
+.pe1-5 {
+  padding-right: 1.5px;
+}
+
+.bottom-12 {
+  bottom: 12px;
+}
+
+.absolute {
+  bottom: 8px;
+  left: 8px;
+  z-index: 99;
+  p {
+    margin: 0;
+  }
+}
+.pde-6 {
+  padding-right: 6px;
+}
+
+.image-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0; /* top:0; right:0; bottom:0; left:0 */
+  border-radius: 8px;
+  background: linear-gradient(
+    to top,
+    rgba(47, 30, 25, 1),   /* 不透明底色 */
+    rgba(47, 30, 25, 0) 30% /* 漸變透明 */
+  );
+  pointer-events: none;       /* 不干擾點擊 */
+  box-shadow: 0 4px #2c1f1a; /* 陰影 */
+}
+
+.milkTea{
+  width: 32px;
+  height: 40px;
+}
+// &:hover{
+// transform: scale(1.87, 1.87);
+// transform-origin: bottom center
+//   }

@@ -1,0 +1,100 @@
+// .word-bg{
+//     background-color: #FAF5EC;
+
+// }
+
+.py-12 {
+  padding: 12px 0px;
+}
+
+.keyboard {
+  width: 100%;
+}
+
+.mb-35 {
+  margin-bottom: 35px;
+}
+
+.mb-31-93 {
+  margin-bottom: 31.93px;
+}
+
+
+
+
+
+
+
+
+/* ===== 輸入框狀態樣式 ===== */
+.textarea-wrapper {
+  position: relative;
+}
+
+.form-control {
+  background: #faf5ec;
+  border: 2px solid $neutral-300;
+  transition: background-color .15s ease, border-color .15s ease, box-shadow .15s ease;
+
+  &::placeholder { color: $neutral-400; }
+
+  /* 點擊狀態 press（focus/active） → 橘色 */
+  &:focus,
+  &:active {
+    border-color: #CE8B41;
+    background:  #F9ECCC;
+    outline: none;
+    box-shadow: none;
+  }
+
+  /* 正確狀態（1–99字） → 綠色 */
+  &.correct {
+    border-color:  #34d399;
+    background: #ecfdf5;
+  }
+
+  /* 錯誤狀態（>100字） → 紅色 */
+  &.error {
+    border-color: #ef4444;
+    background: #fee2e2;
+  }
+
+  /* 完成狀態（=100 且按 Enter） → 藍色 */
+  &.done {
+    border-color: $primary-400;
+    background: $primary-50;
+  }
+
+  /* 禁用狀態 → 灰色 */
+  &.disabled {
+    border-color: $neutral-200;
+    background: $neutral-50;
+    pointer-events: none;
+    color: $neutral-500;
+  }
+}
+
+/* 內嵌字數計數器 */
+.char-counter-inside {
+  position: absolute;
+  right: 12px;
+  bottom: 8px;
+  font-size: 12px;
+  color: $neutral-600;
+  user-select: none;
+
+  &.error { color: #ef4444; }
+  &.done  { color: $primary-400; }
+}
+
+/* 送出按鈕（.submit-btn 由 JS 加上） */
+.submit-btn {
+  &.disabled,
+  &:disabled {
+    background: #fee2e2  !important;   // 淡粉底
+    color: #fca5a5 !important;       // 淡粉字
+    border-color: transparent !important;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+}

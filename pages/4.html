@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>4</title>
+  </head>
+
+  <body>
+    <!-- <%- include('./layout/header'); -%> -->
+    <div class="wrapper">
+      <div class="app-wrapper">
+        <!-- 手機外框 -->
+        <section class="app-content test">
+          <div class="status-bar">
+            <div class="iphone-time"><time datetime="09:41">9:41</time></div>
+            <div class="notch" aria-hidden="true">
+              <img
+                src="/assets/images/icon-notch-6341937a.svg"
+                alt="status"
+                height="30"
+              />
+            </div>
+            <div class="iphone-status">
+              <img
+                src="/assets/images/icon-status-650aa77e.svg"
+                alt="status"
+                height="13"
+              />
+            </div>
+          </div>
+
+          <!-- 實際內容畫面，內容寫在這 -->
+          <div class="container p-4">
+            <header
+              class="d-flex justify-content-between py-4 text-neutral-800 fw-bold align-items-center"
+            >
+              <a href="3.html"
+                ><span class="material-icons-outlined text-neutral-700 fs-2">
+                  chevron_left
+                </span></a
+              >
+              <span class="fs-5">編輯看板</span>
+              <a class="btn-topic" href="5.html" role="button">預覽</a>
+            </header>
+            <!-- 上方nav -->
+            <div class="mb-4">
+              <div class="tab-switch d-flex w-100 rounded-pill p-2">
+                <button class="tab-item flex-fill active rounded-pill fw-bold">
+                  招牌看板
+                </button>
+                <button class="tab-item flex-fill rounded-pill fw-bold">
+                  圖片看板
+                </button>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center mb-4">
+              <div class="kanbanImg text-accent-4 position-relative">
+                <p class="fw-bold pt-5">徵旅伴去波蘭啦～<br />～～</p>
+                <img
+                  class="position-absolute text-1"
+                  src="/assets/images/4/sticker-1.png"
+                  alt="熱"
+                />
+                <img
+                  class="position-absolute text-2"
+                  src="/assets/images/4/sticker-2.png"
+                  alt="烈"
+                />
+                <img
+                  class="position-absolute text-3"
+                  src="/assets/images/4/sticker-3.png"
+                  alt="徵"
+                />
+                <img
+                  class="position-absolute text-4"
+                  src="/assets/images/4/sticker-4.png"
+                  alt="求"
+                />
+              </div>
+            </div>
+            <!-- 中間ICON -->
+            <div class="d-flex gap-4 justify-content-center mb-56">
+              <div class="kanbanIcon d-flex justify-content-center bg-accent-2">
+                <div
+                  class="d-flex flex-column align-items-center justify-content-center text-neutral-700 fs-8 fw-bold"
+                >
+                  <svg
+                    fill="currentColor"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.94043 2.91113H21.3452V12.6135H17.4642V20.3754H15.5238V12.6135H7.76186V20.3754H5.82138V12.6135H1.94043V2.91113ZM18.4054 10.673L19.4047 9.67369V6.93762L15.6693 10.673H18.4054ZM12.9235 10.673L18.745 4.85161H16.0089L10.1875 10.673H12.9235ZM7.43198 10.673L13.2534 4.85161H10.5076L4.6862 10.673H7.43198ZM5.02579 4.85161L3.88091 5.99649V8.73256L7.76186 4.85161H5.02579Z"
+                    />
+                  </svg>
+
+                  <p>造型</p>
+                </div>
+              </div>
+              <div class="kanbanIcon d-flex justify-content-center bg-accent-2">
+                <div
+                  class="d-flex flex-column align-items-center justify-content-center text-neutral-700 fs-8 fw-bold"
+                >
+                  <span class="material-symbols-outlined"> font_download </span>
+                  <p>文字</p>
+                </div>
+              </div>
+              <div
+                class="kanbanIcon d-flex justify-content-center bg-secondary-700"
+              >
+                <div
+                  class="d-flex flex-column align-items-center justify-content-center text-accent-6 fs-8 fw-bold"
+                >
+                  <svg
+                    fill="currentColor"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M17.75 3C18.612 3 19.4386 3.34241 20.0481 3.9519C20.6576 4.5614 21 5.38805 21 6.25V13.129C20.9997 13.7254 20.7627 14.2973 20.341 14.719L14.72 20.341C14.5111 20.5499 14.263 20.7157 13.99 20.8287C13.7171 20.9418 13.4245 21 13.129 21H6.25C5.38805 21 4.5614 20.6576 3.9519 20.0481C3.34241 19.4386 3 18.612 3 17.75V6.25C3 5.38805 3.34241 4.5614 3.9519 3.9519C4.5614 3.34241 5.38805 3 6.25 3H17.75ZM17.75 4.5H6.25C5.78587 4.5 5.34075 4.68437 5.01256 5.01256C4.68437 5.34075 4.5 5.78587 4.5 6.25V17.75C4.5 18.716 5.284 19.5 6.25 19.5H13V16.436C12.7769 16.4688 12.5523 16.4909 12.327 16.502L12 16.51C10.6854 16.5212 9.39987 16.1227 8.322 15.37C8.15836 15.2568 8.04641 15.0831 8.01078 14.8874C7.99314 14.7904 7.99476 14.6909 8.01556 14.5946C8.03636 14.4983 8.07593 14.407 8.132 14.326C8.18807 14.245 8.25956 14.1758 8.34237 14.1224C8.42519 14.069 8.51771 14.0324 8.61465 14.0148C8.81044 13.9791 9.01236 14.0228 9.176 14.136C10.02 14.72 10.956 15.01 12 15.01C12.462 15.01 12.9033 14.953 13.324 14.839C13.5737 14.3209 13.9564 13.8783 14.433 13.5565C14.9096 13.2346 15.4631 13.045 16.037 13.007L16.25 13H19.5V6.25C19.5 5.78587 19.3156 5.34075 18.9874 5.01256C18.6592 4.68437 18.2141 4.5 17.75 4.5ZM18.439 14.5H16.251C15.8117 14.5 15.3884 14.6653 15.0653 14.963C14.7422 15.2608 14.5429 15.6691 14.507 16.107L14.501 16.25L14.5 18.439L18.439 14.5ZM9 7.751C9.16706 7.74627 9.33337 7.7751 9.4891 7.83576C9.64483 7.89643 9.78681 7.98771 9.90665 8.10421C10.0265 8.2207 10.1217 8.36004 10.1868 8.51399C10.2518 8.66794 10.2854 8.83337 10.2854 9.0005C10.2854 9.16763 10.2518 9.33306 10.1868 9.48701C10.1217 9.64096 10.0265 9.7803 9.90665 9.8968C9.78681 10.0133 9.64483 10.1046 9.4891 10.1652C9.33337 10.2259 9.16706 10.2547 9 10.25C8.66848 10.25 8.35054 10.1183 8.11612 9.88388C7.8817 9.64946 7.75 9.33152 7.75 9C7.75 8.66848 7.8817 8.35054 8.11612 8.11612C8.35054 7.8817 8.66848 7.751 9 7.751ZM15 7.75C15.1671 7.74527 15.3334 7.7741 15.4891 7.83476C15.6448 7.89543 15.7868 7.98671 15.9066 8.1032C16.0265 8.2197 16.1217 8.35904 16.1868 8.51299C16.2518 8.66694 16.2854 8.83237 16.2854 8.9995C16.2854 9.16663 16.2518 9.33206 16.1868 9.48601C16.1217 9.63996 16.0265 9.7793 15.9066 9.89579C15.7868 10.0123 15.6448 10.1036 15.4891 10.1642C15.3334 10.2249 15.1671 10.2537 15 10.249C14.6747 10.2398 14.3659 10.1041 14.1391 9.8708C13.9122 9.63747 13.7854 9.3249 13.7854 8.9995C13.7854 8.6741 13.9122 8.36153 14.1391 8.12821C14.3659 7.89488 14.6747 7.7592 15 7.75Z"
+                    />
+                  </svg>
+
+                  <p>貼圖</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 下方文字ICON -->
+          <div
+            class="d-flex pt-44 bg-accent-3 flex-column justify-content-center align-items-center bottom-text-icons"
+          >
+            <div class="flex-nowrap d-flex mb-4 gap-4">
+              <span class="circle-icon-green">伴</span>
+              <span class="circle-icon-green">旅</span>
+              <span class="circle-icon-green">讚</span>
+              <span class="circle-icon-green">早</span>
+              <span class="circle-icon-green">午</span>
+              <span class="circle-icon-green">晚</span>
+              <span class="circle-icon-green">安</span>
+            </div>
+            <div class="flex-nowrap d-flex mb-4 gap-4">
+              <span class="circle-icon-pink">伴</span>
+              <span class="circle-icon-pink">旅</span>
+              <span class="circle-icon-pink">讚</span>
+              <span class="circle-icon-pink">早</span>
+              <span class="circle-icon-pink">午</span>
+              <span class="circle-icon-pink">晚</span>
+              <span class="circle-icon-pink">安</span>
+            </div>
+            <div class="flex-nowrap d-flex mb-4 gap-4">
+              <span class="circle-icon-brown">伴</span>
+              <span class="circle-icon-brown">旅</span>
+              <span class="circle-icon-brown">讚</span>
+              <span class="circle-icon-brown">早</span>
+              <span class="circle-icon-brown">午</span>
+              <span class="circle-icon-brown">晚</span>
+              <span class="circle-icon-brown">安</span>
+            </div>
+            <div class="flex-nowrap d-flex mb-4 gap-4">
+              <span class="circle-icon-yellow">伴</span>
+              <span class="circle-icon-yellow">旅</span>
+              <span class="circle-icon-yellow">讚</span>
+              <span class="circle-icon-yellow">早</span>
+              <span class="circle-icon-yellow">午</span>
+              <span class="circle-icon-yellow">晚</span>
+              <span class="circle-icon-yellow">安</span>
+            </div>
+            <div class="flex-nowrap d-flex mb-4 gap-4">
+              <span class="circle-icon-white">伴</span>
+              <span class="circle-icon-white">旅</span>
+              <span class="circle-icon-white">讚</span>
+              <span class="circle-icon-white">早</span>
+              <span class="circle-icon-white">午</span>
+              <span class="circle-icon-white">晚</span>
+              <span class="circle-icon-white">安</span>
+            </div>
+          </div>
+          <!-- 實際內容畫面，內容寫到這 -->
+          <div class="homeindicator">
+            <div class="indicator">
+
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

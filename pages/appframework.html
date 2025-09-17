@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+  </head>
+  <body>
+    <!-- <%- include('./layout/header'); -%> -->
+    <div class="wrapper">
+      <div class="app-wrapper">
+        <!-- 手機外框 -->
+        <section class="app-content">
+          <div class="status-bar">
+           <div class="iphone-time"><time datetime="09:41">9:41</time></div>
+           <div class="notch" aria-hidden="true"><img src="/assets/images/icon-notch-6341937a.svg" alt="status" height="30"></div>
+            <div class="iphone-status">
+              <img src="/assets/images/icon-status-650aa77e.svg" alt="status" height="13">
+            </div>
+          </div>
+
+          <!-- 實際內容畫面，內容寫在這 -->
+          <div class="container">
+                <%- include('./layout/header'); -%>
+                <!-- 範例 -->
+                <main>
+                  <p>appframework</p>
+                  <img src="/assets/images/MatchSuccess.svg" alt="">
+                  <img src="/assets/images/noData.svg" alt="">
+                  <img src="/assets/images/noData.svg" alt="">
+                  <img src="/assets/images/UnderMaintain.svg" alt="">
+                  <img src="/assets/images/PromotePost.svg" alt="">
+                </main>
+                 
+
+                
+               <%- include('./layout/footer'); -%>
+
+            
+          </div>
+
+          <!-- 實際內容畫面，內容寫到這 -->
+          <div class="homeindicator">
+            <div class="indicator "></div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

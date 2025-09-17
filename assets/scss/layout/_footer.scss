@@ -1,0 +1,39 @@
+.footer{
+&-functions{
+  align-items: center;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+
+}
+&-function{
+  width: 20%;
+
+}
+
+
+
+.mate-icon{
+  width: 44.8px;
+  height: 44.8px;
+  position: absolute;
+  top: -15.8px;
+}
+
+
+
+.mate-text{
+  position: absolute;
+  top: 29px;
+}
+
+&-active{
+  // transition: transform 0.1s,transform-origin 0.1s;
+  transform: scale(1.87, 1.87);
+transform-origin: bottom center
+  }  
+}
+// &:hover{
+// transform: scale(1.87, 1.87);
+// transform-origin: bottom center
+//   }
+

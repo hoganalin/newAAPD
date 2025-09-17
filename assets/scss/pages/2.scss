@@ -1,0 +1,94 @@
+.btn-topic {
+  background-color: $primary-700;
+  color: $primary-50;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 1000px;
+  border: none;
+  display: block;
+  margin: 0;
+  text-decoration: none;
+}
+
+.form-control::placeholder {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+//開個話題用
+
+.topic-header {
+  font-weight: 500;
+
+  font-size: 14px;
+}
+
+.topic-input {
+  border: none;
+  background: transparent;
+  font-size: 1.25rem;
+  color: #2c1f1a;
+  padding: 8px 0;
+}
+
+.topic-input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  color: #2c1f1a;
+}
+
+.topic-input::placeholder {
+  color: #ab8f65;
+}
+
+.placeholder-text {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #ab8f65;
+}
+
+.main-text {
+  font-size: 1.25rem;
+}
+
+.counter-text {
+  font-size: 0.75rem;
+  margin-left: 4px;
+}
+
+//disabled
+a.btn.btn-topic.disabled {
+  pointer-events: none;
+  /* 讓它不能被點擊 */
+  color: $primary-200;
+  cursor: not-allowed;
+  background-color: $primary-300;
+  /* 滑鼠移上去顯示禁止符號 */
+}
+
+
+.TopicBox {
+  border: none;
+  background: transparent;
+  color: $neutral-400;
+  font-size: 20px;
+  outline: none;
+  font-weight: 700;
+}
+
+.TopicBox::placeholder {
+  color: $neutral-400;
+  opacity: 1;
+  font-weight: 700;
+}
+
+.topicFocus:focus {
+  border-color: #CE8B41;
+  background-color: $accent-100;
+}

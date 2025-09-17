@@ -1,0 +1,83 @@
+
+    .icon-locate{
+ font-size: 16px;   /* 控制寬高 */
+//   line-height: 1;    /* 避免上下多餘空隙 */
+  display: inline-flex; 
+  align-items: center;
+//   justify-content: center;
+  width: 16px;
+  height: 16px;
+    }
+    
+.newtopic-cardtitle{
+  position:relative;
+}
+.closecard {
+  position: absolute;
+  top: -12px;       
+  right: 4px;        
+  width: 24px;
+  height: 24px;
+  padding: 4px;    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  background-color: #007bff;
+}
+
+.closecard .material-symbols-outlined {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1;
+}
+
+.imgCloseCard{
+  position: absolute;
+  top: 8px;       
+  right: 8px;        
+  width: 24px;
+  height: 24px;
+  padding: 4px;      
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  background-color: #007bff; 
+
+}
+.imgCloseCard .material-symbols-outlined {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1;
+}
+
+.sceney-card {
+  position: relative;
+  border-radius: 3.88px;
+
+  img {
+    width: 167.86px;
+    height: 100%;
+    border-radius: 3.88px; // 圖片本身也加圓角，雙保險
+    display: block;      // 避免 inline-img 留白
+  }
+}
+.closeSceneyCard{
+height: 24px;
+width: 24px;
+position: absolute;
+top: 20px; 
+left: 153px;
+color: white;
+// border: 1px solid black;
+}
+
+.icon-sm{
+  width: 16px;
+  height: 16px;
+}
