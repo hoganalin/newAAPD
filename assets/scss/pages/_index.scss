@@ -19,6 +19,9 @@ search-span {
 .topic-cards {
   max-height: 564px;
   scrollbar-width: none; /* Firefox 隱藏 */
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+  touch-action: pan-y;
 
   &::-webkit-scrollbar {
     display: none; /* Chrome / Safari 隱藏 */
@@ -36,6 +39,12 @@ search-span {
   display: flex;
   align-items: center;
   justify-content: center;
+  &:hover{
+    background-color: $primary;
+  }
+  &:active{
+    background-color: darken($primary,50%);
+  }
 }
 .footer {
   position: relative;

@@ -164,3 +164,11 @@
   border-top-left-radius: 16px; /* 上左圓角 */
   border-top-right-radius: 16px; /* 上右圓角 */
 }
+
+.circleIcon {
+  gap: 10px;
+
+  @media (min-width: 390px) {
+    gap: 16px;
+  }
+}

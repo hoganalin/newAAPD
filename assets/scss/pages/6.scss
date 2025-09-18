@@ -15,5 +15,7 @@ padding-bottom: 8px;
   z-index: 1055; /* 確保在最上層 */
   pointer-events: none; /* 不阻擋其他元素的點擊 */
   bottom: 102px;
-  left:8px;
+  left: 50%;            /* 定位到中間 */
+  transform: translateX(-50%); /* 往左偏移自身一半達成水平置中 */
+  // left:8px;
 }

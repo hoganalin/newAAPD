@@ -1,5 +1,8 @@
 import './assets/scss/all.scss';
 import 'bootstrap/dist/js/bootstrap.min.js';
+// import './js/2.js'
+// import './js/9.js'
+// import './js/10.js'
 
 console.log('Hello world');
 
