@@ -1,0 +1,1 @@
+import"./main-BOXlDuhd.js";document.addEventListener("DOMContentLoaded",()=>{const s=document.querySelectorAll(".stage .p-span"),a=new IntersectionObserver((e,t)=>{e.forEach(n=>{n.isIntersecting&&(n.target.classList.add("animate__animated","animate__fadeInUp"),t.unobserve(n.target))})},{threshold:.2});s.forEach((e,t)=>{e.style.setProperty("--i",t),a.observe(e)})});
