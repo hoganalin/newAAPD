@@ -40,18 +40,19 @@
 
   /* 點擊狀態 press（focus/active） → 橘色 */
   &:focus,
-  &:active {
+  &:active,
+  &.correct {
     border-color: #CE8B41;
     background:  #F9ECCC;
     outline: none;
     box-shadow: none;
   }
 
-  /* 正確狀態（1–99字） → 綠色 */
-  &.correct {
-    border-color:  #34d399;
-    background: #ecfdf5;
-  }
+  // /* 正確狀態（1–99字） → 綠色 */
+  // &.correct {
+  //   border-color:  #34d399;
+  //   background: #ecfdf5;
+  // }
 
   /* 錯誤狀態（>100字） → 紅色 */
   &.error {

@@ -31,6 +31,7 @@
 .flip-card {
   perspective: 1000px;
   position: relative;
+  touch-action: pan-y; /*Celia鎖定水平滑動才翻頁*/
 }
 
 .flip-card-inner {
@@ -115,4 +116,14 @@
 }
 .mt1{
  margin-top: 1px;
+}
+
+
+
+
+/* 如果你真的只想用屬性而非變數，就用 background-color 並提高權重 */
+.btn.btn-pressed:active{
+  background-color:#712B2B !important;
+  color:#F6D2D2 !important;
+  border-color:transparent !important;
 }
