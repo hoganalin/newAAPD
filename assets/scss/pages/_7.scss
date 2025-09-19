@@ -127,3 +127,22 @@
   color:#F6D2D2 !important;
   border-color:transparent !important;
 }
+
+// @media (max-width: 375px) {
+//   .flex-mini {
+//     display: flex;
+//   }
+// }
+
+@media (max-width: 374.98px) {
+  .home-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .home-item .material-icons-outlined {
+    margin-right: 0 !important; /* 直向時不用右邊距 */
+    margin-bottom: .25rem;      /* 改用下邊距 */
+  }
+}
